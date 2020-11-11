@@ -100,7 +100,11 @@ figure {
 		margin-top: 0px;
 	}
 }
-.owl-next:focus, .owl-prev:focus {outline: none;}
+
+.owl-next:focus, .owl-prev:focus {
+	outline: none;
+}
+
 @media ( min-width : 1200px) {
 	#big.owl-theme .owl-prev {
 		left: -5px;
@@ -149,13 +153,16 @@ figure {
 		margin-top: 0px;
 	}
 }
-.item-new-review h3{
+
+.item-new-review h3 {
 	font-size: 0.8rem;
 }
-.star-text{
+
+.star-text {
 	display: none;
 }
-.short-review{
+
+.short-review {
 	padding-left: 5px;
 }
 </style>
@@ -220,18 +227,19 @@ figure {
     while ($r = mysqli_fetch_array($data["15ReviewMoiNhat"])) {
         ?>
         <div class="item-new-review">
-        <h3>
-						<span class="user-name">
+						<h3>
+							<span class="user-name">
 						<?php if($r["hide"] == 1){ ?>
 						<b><i>*VP ĐKSD*</i></b>
 						<?php } else {?>
 						<?php echo $r["reviewer"]?>
 						<?php } ?>&nbsp;</span>đã review <a
-							href="<?php echo $servername ?>/school/<?php echo $r["slugschool"] ?>-<?php echo $r["id"] ?>"><span
-							class="review-school-name"><?php echo $r["tenschool"] ?> &nbsp;</span></a>
-						<span class="review-rate"><?php echo $r["sao"] ?> <span class="star-text">sao</span><i
-							class="fa fa-star" aria-hidden="true"></i> </span>
-							</h3>
+								href="<?php echo $servername ?>/school/<?php echo $r["slugschool"] ?>-<?php echo $r["id"] ?>"><span
+								class="review-school-name"><?php echo $r["tenschool"] ?> &nbsp;</span></a>
+							<span class="review-rate"><?php echo $r["sao"] ?> <span
+								class="star-text">sao</span><i class="fa fa-star"
+								aria-hidden="true"></i> </span>
+						</h3>
 						<div class="short-review">
 						<?php if($r["hide"] == 1){ ?>
 						<b><i>*Nội dung review này bị ẩn vì vi phạm điều khoản sử dụng*</i></b>
@@ -266,13 +274,16 @@ figure {
 							href="<?php echo $servername ?>/school/<?php echo $row["slugschool"] ?>-<?php echo $row["id"] ?>">
 							<div class="item-review">
 								<div class="school-logo">
-    								<div class="logo-wrap">
-    									<img
-    										src="<?php echo $servername ?>/web/public/asset/schools/logo/<?php echo $row["logo"] ?>" alt="<?php echo $row["tenschool"] ?>">
-    								</div>
+									<div class="logo-wrap">
+										<img
+											src="<?php echo $servername ?>/web/public/asset/schools/logo/<?php echo $row["logo"] ?>"
+											alt="<?php echo $row["tenschool"] ?>">
+									</div>
 								</div>
 								<div class="school-info">
-									<div class="school-name"><h2 class="is-size-5"><?php echo $row["tenschool"] ?></h2></div>
+									<div class="school-name">
+										<h2 class="is-size-5"><?php echo $row["tenschool"] ?></h2>
+									</div>
 									<div class="school-rating d-flex">
 										<div class="star">
 									<?php
@@ -291,7 +302,7 @@ figure {
 									<div class="school-category">
 										<span class="icon"><i class="fa fa-graduation-cap"
 											aria-hidden="true"></i> </span> <span class="text">
-									<?php echo $row["category"] ?>
+									<?php echo $row["category"]?>
 									</span>
 
 									</div>
@@ -316,13 +327,34 @@ figure {
         <?php } ?>
 					</div>
 				<div class="container">
-		<?php echo $data["Nav"] ?>
+		<?php echo $data["Nav"]?>
 	</div>
 			</div>
 		</div>
 		<div class="col-md-3 col-right">
 			<?php require_once "web/views/partials/right-nav.php"?>
 			<?php require_once 'web/views/partials/right-social.php';?>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-9 col-question">
+			<div class="list-school">
+				<div class="page-heading d-flex">
+					<h4 class="box-title-page mr-auto">MỚI NHẤT</h4>
+				</div>
+				<div class="list-question">
+					<div class="question-summary">
+						<div class="question-meta-counts">
+							<div class="status">
+								<div class="mini-counts">
+									<span title = "1 answer">1</span>
+								</div>
+								<div>answer</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

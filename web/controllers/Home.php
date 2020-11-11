@@ -23,7 +23,7 @@ class Home extends Controller
         if ($a == NULL) {
             $trangHienTai = 1;
             $tabHienTai = "";
-            $schoolMoiTrang = 20;
+            $schoolMoiTrang = 15;
             if (isset($_GET["page"])) {
                 $trangHienTai = $_GET["page"];
             }
