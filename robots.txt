@@ -1,0 +1,4 @@
+User-agent: * 
+Disallow: /quan-tri-chinh/
+Disallow: /dang-review/
+Disallow: /dang-reply/

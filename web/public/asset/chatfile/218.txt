@@ -1,0 +1,3 @@
+{"chatuser":"Ngạn mắt biếc","chattime":"2020-04-03 18:42:55","noidung":"saf","gioitinh":"nam","sessionid":"e79ukamta4rog2vjlnrajshr1t"}
+{"chatuser":"Ngạn mắt biếc","chattime":"2020-04-03 22:36:14","noidung":"fa","gioitinh":"nam","sessionid":"ll4u78bthv8t1hsug251nue6ns"}
+{"chatuser":"Ngạn mắt biếc","chattime":"2020-04-03 22:38:54","noidung":"afa","gioitinh":"nam","sessionid":"ll4u78bthv8t1hsug251nue6ns"}
