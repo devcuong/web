@@ -165,6 +165,130 @@ figure {
 .short-review {
 	padding-left: 5px;
 }
+.question-summary {
+    width: 100%;
+    padding-left: 8px;
+    box-sizing: border-box;
+	display: flex;
+    padding: 12px 8px;
+    float: none;
+	border-top: 1px solid #eff0f1;
+}
+.question-meta-counts{
+	float: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-right: 0;
+    padding: 0 8px 0 0;
+    box-sizing: content-box;
+    flex-shrink: 0;
+	vertical-align: top;
+}
+
+.status {
+	display: inline-block;
+	margin: 0 3px 0 0;
+	min-width: 44px;
+	height: auto;
+	font-size: 11px;
+	padding: 6px;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.status.answered {
+	border-color: #5eba7d;
+}
+
+.mini-counts {
+	font-size: 17px;
+	font-weight: 300;
+	margin-bottom: 4px;
+}
+
+.views {
+	display: inline-block;
+	height: 38px;
+	min-width: 40px;
+	margin: 0 7px 0 0;
+	font-size: 11px;
+	color: #848d95;
+	padding: 7px 6px;
+}
+
+.warm {
+	color: #a35200;
+}
+
+.summary {
+	flex: 1 auto;
+	width: auto;
+	float: none;
+	margin: 0;
+	overflow: hidden;
+}
+
+.summary h3 {
+    margin-bottom: .35em;
+    line-height: 1.3;
+	word-wrap: break-word;
+    word-break: break-word;
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+.question-hyperlink{
+	font-size: 16px;
+    font-weight: 400;
+	color: #c02d2e;
+}
+
+.tags {
+    line-height: 18px;
+    float: left;
+}
+
+.started {
+    white-space: normal;
+	width: auto;
+    line-height: inherit;
+    padding-top: 4px;
+	float: right;
+}
+
+.started-link {
+    font-size: 12px;
+    color: #9199a1;
+}
+
+.started a:not(.started-link) {
+    font-size: 12px;
+    color: #c02d2e;
+}
+
+.post-tag{
+	font-size: 12px;
+	color: #373737;
+    background-color: #edeac6;
+    border-color: #d6d2a6;
+	display: inline-block;
+    padding: .4em .5em;
+    margin: 2px 2px 2px 0;
+    line-height: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+}
+
+.question-hyperlink:visited{
+	color: #6d1a1a;
+}
+
 </style>
 
 <div class="container">
@@ -340,18 +464,116 @@ figure {
 		<div class="col-md-9 col-question">
 			<div class="list-school">
 				<div class="page-heading d-flex">
-					<h4 class="box-title-page mr-auto">MỚI NHẤT</h4>
+					<h4 class="box-title-page mr-auto">HỎI - HỌC</h4>
 				</div>
 				<div class="list-question">
 					<div class="question-summary">
 						<div class="question-meta-counts">
-							<div class="status">
+							<div class="status answered">
 								<div class="mini-counts">
-									<span title = "1 answer">1</span>
+									<span title="1 answer">1</span>
 								</div>
 								<div>answer</div>
 							</div>
+							<div class="views">
+								<div class="mini-counts warm">
+									<span title="2414 views">2k</span>
+								</div>
+								<div class="warm">views</div>
+							</div>
 						</div>
+						<div class="summary">
+						<h3>
+							<a
+								href="/questions/1042240/tips-and-suggestions-for-private-medical-office-server-room"
+								class="question-hyperlink">Tips and suggestions for private
+								medical office Server Room?</a>
+						</h3>
+						<div class="tags">
+							<a href="/questions/tagged/networking" class="post-tag" title=""
+								rel="tag">networking</a> <a href="/questions/tagged/rack"
+								class="post-tag" title="show questions tagged 'rack'" rel="tag">rack</a>
+						</div>
+						<div class="started">
+								<a
+									href="/questions/1042240/tips-and-suggestions-for-private-medical-office-server-room"
+									class="started-link"> asked <span title="2020-11-12 02:48:40Z"
+									class="relativetime">1 hour ago</span>
+								</a> <a href="/users/600264/josue">Josue</a>
+							</div>
+					</div>
+					</div>
+					<div class="question-summary">
+						<div class="question-meta-counts">
+							<div class="status answered">
+								<div class="mini-counts">
+									<span title="1 answer">1</span>
+								</div>
+								<div>answer</div>
+							</div>
+							<div class="views">
+								<div class="mini-counts warm">
+									<span title="2414 views">2k</span>
+								</div>
+								<div class="warm">views</div>
+							</div>
+						</div>
+						<div class="summary">
+						<h3>
+							<a
+								href="/questions/1042240/tips-and-suggestions-for-private-medical-office-server-room"
+								class="question-hyperlink">Tips and suggestions for private
+								medical office Server Room?</a>
+						</h3>
+						<div class="tags">
+							<a href="/questions/tagged/networking" class="post-tag" title=""
+								rel="tag">networking</a> <a href="/questions/tagged/rack"
+								class="post-tag" title="show questions tagged 'rack'" rel="tag">rack</a>
+						</div>
+						<div class="started">
+								<a
+									href="/questions/1042240/tips-and-suggestions-for-private-medical-office-server-room"
+									class="started-link"> asked <span title="2020-11-12 02:48:40Z"
+									class="relativetime">1 hour ago</span>
+								</a> <a href="/users/600264/josue">Josue</a>
+							</div>
+					</div>
+					</div>
+					<div class="question-summary">
+						<div class="question-meta-counts">
+							<div class="status answered">
+								<div class="mini-counts">
+									<span title="1 answer">1</span>
+								</div>
+								<div>answer</div>
+							</div>
+							<div class="views">
+								<div class="mini-counts warm">
+									<span title="2414 views">2k</span>
+								</div>
+								<div class="warm">views</div>
+							</div>
+						</div>
+						<div class="summary">
+						<h3>
+							<a
+								href="/questions/1042240/tips-and-suggestions-for-private-medical-office-server-room"
+								class="question-hyperlink">Tips and suggestions for private
+								medical office Server Room?</a>
+						</h3>
+						<div class="tags">
+							<a href="/questions/tagged/networking" class="post-tag" title=""
+								rel="tag">networking</a> <a href="/questions/tagged/rack"
+								class="post-tag" title="show questions tagged 'rack'" rel="tag">rack</a>
+						</div>
+						<div class="started">
+								<a
+									href="/questions/1042240/tips-and-suggestions-for-private-medical-office-server-room"
+									class="started-link"> asked <span title="2020-11-12 02:48:40Z"
+									class="relativetime">1 hour ago</span>
+								</a> <a href="/users/600264/josue">Josue</a>
+							</div>
+					</div>
 					</div>
 				</div>
 			</div>

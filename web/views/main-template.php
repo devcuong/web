@@ -1207,7 +1207,9 @@ a, a:hover, a:active, a:visited, a:focus {
 					<div class="col-md-3">
 						<div class="header">Email: school@reviewtruong.com</div>
 					</div>
-					<div class="col-md-3"></div>
+					<div class="col-md-3">
+						<div class="qc-link"><a class="tnc-link" href="<?php echo $servername ?>/qc">Doanh thu quảng cáo</a></div>
+					</div>
 				</div>
 			</div>
 		</footer>
