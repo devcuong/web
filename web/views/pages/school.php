@@ -749,7 +749,7 @@ while ($row = mysqli_fetch_array($data["School"])) {
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy
 					Bỏ</button>
 				<button type="button" class="btn btn-primary button-comment-submit"
-					disabled>Trả lời ngay</button>
+					disabled>Đặt câu hỏi ngay</button>
 			</div>
 		</div>
 	</div>

@@ -81,7 +81,7 @@
             </p>
              <p class="answer">
                     Website thời điểm này kinh phí không nhiều, lượng truy cập thấp + admin sử dụng mã giảm giá trên canhme.com nên chi phí chỉ khoảng 17usd/1năm(hiện tại sử dụng shared hosting).<br>
-                    website này phi lợi nhuận và không thu quảng cáo, do đó chúng tôi sẽ thường xuyên tường minh việc kinh phí để khách và quý trường rõ<br>
+                    website này phi lợi nhuận, do đó chúng tôi sẽ thường xuyên tường minh việc kinh phí để khách và quý trường rõ<br>
             </p> 
 		</div>
 	</article>

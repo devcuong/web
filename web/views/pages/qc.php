@@ -44,7 +44,7 @@
 <div class="container main-content">
 	<article class="message is-info">
 		<div class="message-header">
-			<h2 class="title">Giải đáp thắc mắc</h2>
+			<h2 class="title">Doanh thu quảng cáo</h2>
 		</div>
 		<div class="message-body is-size-5 help-section">
 			<p class="question">Đây là trang mà tôi sẽ công bố doanh thu quảng cáo. Đối với những ai muốn chắc chắn hơn về doanh thu, có thể liên hệ tôi qua email school@reviewtruong.com để xem trực tiếp trên nên tảng của google. </p>

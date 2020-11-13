@@ -165,24 +165,26 @@ figure {
 .short-review {
 	padding-left: 5px;
 }
+
 .question-summary {
-    width: 100%;
-    padding-left: 8px;
-    box-sizing: border-box;
+	width: 100%;
+	padding-left: 8px;
+	box-sizing: border-box;
 	display: flex;
-    padding: 12px 8px;
-    float: none;
+	padding: 12px 8px;
+	float: none;
 	border-top: 1px solid #eff0f1;
 }
-.question-meta-counts{
+
+.question-meta-counts {
 	float: none;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    margin-right: 0;
-    padding: 0 8px 0 0;
-    box-sizing: content-box;
-    flex-shrink: 0;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	margin-right: 0;
+	padding: 0 8px 0 0;
+	box-sizing: content-box;
+	flex-shrink: 0;
 	vertical-align: top;
 }
 
@@ -231,64 +233,77 @@ figure {
 }
 
 .summary h3 {
-    margin-bottom: .35em;
-    line-height: 1.3;
+	margin-bottom: .35em;
+	line-height: 1.3;
 	word-wrap: break-word;
-    word-break: break-word;
+	word-break: break-word;
 	font-weight: 400;
 	font-size: 1rem;
 }
 
-.question-hyperlink{
-	font-size: 16px;
-    font-weight: 400;
-	color: #c02d2e;
-}
-
 .tags {
-    line-height: 18px;
-    float: left;
+	line-height: 18px;
+	float: left;
 }
 
 .started {
-    white-space: normal;
+	white-space: normal;
 	width: auto;
-    line-height: inherit;
-    padding-top: 4px;
+	line-height: inherit;
+	padding-top: 4px;
 	float: right;
 }
 
-.started-link {
-    font-size: 12px;
-    color: #9199a1;
+.started-link, .started-link:hover {
+	font-size: 1rem;
+	color: #000000;
 }
 
-.started a:not(.started-link) {
-    font-size: 12px;
-    color: #c02d2e;
+.author-name, .author-name:hover{
+	color: #FE2E2E;
 }
 
-.post-tag{
+.started a:not (.started-link ) {
+	font-size: 12px;
+	color: #c02d2e;
+}
+
+.post-tag {
 	font-size: 12px;
 	color: #373737;
-    background-color: #edeac6;
-    border-color: #d6d2a6;
+	background-color: #edeac6;
+	border-color: #d6d2a6;
 	display: inline-block;
-    padding: .4em .5em;
-    margin: 2px 2px 2px 0;
-    line-height: 1;
-    white-space: nowrap;
-    text-decoration: none;
-    text-align: center;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 3px;
+	padding: .4em .5em;
+	margin: 2px 2px 2px 0;
+	line-height: 1;
+	white-space: nowrap;
+	text-decoration: none;
+	text-align: center;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 3px;
 }
 
-.question-hyperlink:visited{
-	color: #6d1a1a;
+.question-hyperlink {
+	font-size: 16px;
+	font-weight: bold;
+	color: #c02d2e;
 }
 
+.question-hyperlink:hover, .question-hyperlink:visited {
+	color: #c02d2e;
+}
+
+.add-more-btn{
+	border: 1px solid #FE2E2E;
+	background: #FE2E2E;
+	border-radius: 5px;
+	padding: 2px;
+}
+.add-more-btn a{
+	color: #fff;
+}
 </style>
 
 <div class="container">
@@ -454,17 +469,15 @@ figure {
 		<?php echo $data["Nav"]?>
 	</div>
 			</div>
-		</div>
-		<div class="col-md-3 col-right">
-			<?php require_once "web/views/partials/right-nav.php"?>
-			<?php require_once 'web/views/partials/right-social.php';?>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-9 col-question">
 			<div class="list-school">
 				<div class="page-heading d-flex">
 					<h4 class="box-title-page mr-auto">HỎI - HỌC</h4>
+					<div class="add-more-btn d-flex">
+						<a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus-square" aria-hidden="true"></i>
+						 <span
+							class="add-question">THÊM CÂU HỎI
+						</span></a>
+					</div>
 				</div>
 				<div class="list-question">
 					<div class="question-summary">
@@ -483,25 +496,25 @@ figure {
 							</div>
 						</div>
 						<div class="summary">
-						<h3>
-							<a
-								href="/questions/1042240/tips-and-suggestions-for-private-medical-office-server-room"
-								class="question-hyperlink">Tips and suggestions for private
-								medical office Server Room?</a>
-						</h3>
-						<div class="tags">
-							<a href="/questions/tagged/networking" class="post-tag" title=""
-								rel="tag">networking</a> <a href="/questions/tagged/rack"
-								class="post-tag" title="show questions tagged 'rack'" rel="tag">rack</a>
-						</div>
-						<div class="started">
+							<h3>
+								<a
+									href="/questions/1042240/tips-and-suggestions-for-private-medical-office-server-room"
+									class="question-hyperlink">Tips and suggestions for private
+									medical office Server Room?</a>
+							</h3>
+							<div class="tags">
+								<a href="/questions/tagged/networking" class="post-tag" title=""
+									rel="tag">networking</a> <a href="/questions/tagged/rack"
+									class="post-tag" title="show questions tagged 'rack'" rel="tag">rack</a>
+							</div>
+							<div class="started">
 								<a
 									href="/questions/1042240/tips-and-suggestions-for-private-medical-office-server-room"
 									class="started-link"> asked <span title="2020-11-12 02:48:40Z"
 									class="relativetime">1 hour ago</span>
-								</a> <a href="/users/600264/josue">Josue</a>
+								</a> <a href="/users/600264/josue" class="author-name">Josue</a>
 							</div>
-					</div>
+						</div>
 					</div>
 					<div class="question-summary">
 						<div class="question-meta-counts">
@@ -519,25 +532,25 @@ figure {
 							</div>
 						</div>
 						<div class="summary">
-						<h3>
-							<a
-								href="/questions/1042240/tips-and-suggestions-for-private-medical-office-server-room"
-								class="question-hyperlink">Tips and suggestions for private
-								medical office Server Room?</a>
-						</h3>
-						<div class="tags">
-							<a href="/questions/tagged/networking" class="post-tag" title=""
-								rel="tag">networking</a> <a href="/questions/tagged/rack"
-								class="post-tag" title="show questions tagged 'rack'" rel="tag">rack</a>
-						</div>
-						<div class="started">
+							<h3>
+								<a
+									href="/questions/1042240/tips-and-suggestions-for-private-medical-office-server-room"
+									class="question-hyperlink">Tips and suggestions for private
+									medical office Server Room?</a>
+							</h3>
+							<div class="tags">
+								<a href="/questions/tagged/networking" class="post-tag" title=""
+									rel="tag">networking</a> <a href="/questions/tagged/rack"
+									class="post-tag" title="show questions tagged 'rack'" rel="tag">rack</a>
+							</div>
+							<div class="started">
 								<a
 									href="/questions/1042240/tips-and-suggestions-for-private-medical-office-server-room"
 									class="started-link"> asked <span title="2020-11-12 02:48:40Z"
 									class="relativetime">1 hour ago</span>
-								</a> <a href="/users/600264/josue">Josue</a>
+								</a> <a href="/users/600264/josue" class="author-name">Josue</a>
 							</div>
-					</div>
+						</div>
 					</div>
 					<div class="question-summary">
 						<div class="question-meta-counts">
@@ -555,28 +568,79 @@ figure {
 							</div>
 						</div>
 						<div class="summary">
-						<h3>
-							<a
-								href="/questions/1042240/tips-and-suggestions-for-private-medical-office-server-room"
-								class="question-hyperlink">Tips and suggestions for private
-								medical office Server Room?</a>
-						</h3>
-						<div class="tags">
-							<a href="/questions/tagged/networking" class="post-tag" title=""
-								rel="tag">networking</a> <a href="/questions/tagged/rack"
-								class="post-tag" title="show questions tagged 'rack'" rel="tag">rack</a>
-						</div>
-						<div class="started">
+							<h3>
+								<a
+									href="/questions/1042240/tips-and-suggestions-for-private-medical-office-server-room"
+									class="question-hyperlink">Tips and suggestions for private
+									medical office Server Room?</a>
+							</h3>
+							<div class="tags">
+								<a href="/questions/tagged/networking" class="post-tag" title=""
+									rel="tag">networking</a> <a href="/questions/tagged/rack"
+									class="post-tag" title="show questions tagged 'rack'" rel="tag">rack</a>
+							</div>
+							<div class="started">
 								<a
 									href="/questions/1042240/tips-and-suggestions-for-private-medical-office-server-room"
 									class="started-link"> asked <span title="2020-11-12 02:48:40Z"
 									class="relativetime">1 hour ago</span>
-								</a> <a href="/users/600264/josue">Josue</a>
+								</a> <a href="/users/600264/josue" class="author-name">Josue</a>
 							</div>
-					</div>
+						</div>
 					</div>
 				</div>
 			</div>
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+	aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">ĐẶT CÂU HỎI VẤN ĐỀ BẠN QUAN TÂM NGAY</h5>
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form id="comment-form"
+					action="<?php echo $servername ?>/school/dang-reply" method="POST">
+					<div class="form-group">
+						<label for="reviewer" class="col-form-label">Tên Họ</label> <input
+							type="text" class="form-control" id="replyer" name="replyer"
+							placeholder="Tên người đặt câu hỏi (Mặc định là KHÁCH)">
+					</div>
+					<div class="form-group">
+						<label for="message-text" class="col-form-label">Nội dung câu hỏi<span
+							class="text-danger">&nbsp(Bắt buộc)</span></label>
+						<textarea class="form-control textarea" id="review-content"
+							name="content" placeholder="Tối thiểu 10 ký tự"></textarea>
+					</div>
+					<div class="g-recaptcha"
+						data-sitekey="6LelELIZAAAAALqW3G4h7Zj2gafuc2iagDhT6rf9"
+						data-callback="onCommentCaptchaSuccess"></div>
+					<input type="hidden" name="schoolId"
+						value="<?php echo $row["id"] ?>" /> <input type="hidden"
+						name="schoolUrl"
+						value="<?php echo $servername ?>/school/<?php echo $row["slugschool"] ?>-<?php echo $row["id"] ?>" />
+					<input type="hidden" id="review-id" name="reviewId" /> <input
+						type="hidden" id="member-id" name="member-id" value="0">
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy
+					Bỏ</button>
+				<button type="button" class="btn btn-primary button-comment-submit"
+					disabled>Trả lời ngay</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Modal -->
+		</div>
+		<div class="col-md-3 col-right">
+			<?php require_once "web/views/partials/right-nav.php"?>
+			<?php require_once 'web/views/partials/right-social.php';?>
 		</div>
 	</div>
 </div>
