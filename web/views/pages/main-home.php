@@ -604,7 +604,7 @@ figure {
 			</div>
 			<div class="modal-body">
 				<form id="comment-form"
-					action="<?php echo $servername ?>/school/dang-reply" method="POST">
+					action="<?php echo $servername ?>/questions/dang-question" method="POST">
 					<div class="form-group">
 						<label for="reviewer" class="col-form-label">Tên Người Đăng</label> <input
 							type="text" class="form-control" id="person-name" name="person-name"
@@ -612,13 +612,13 @@ figure {
 					</div>
 					<div class="form-group">
 						<label for="reviewer" class="col-form-label">Tiêu đề câu hỏi</label> <input
-							type="text" class="form-control" id="question-title" name="question-title"
+							type="text" class="form-control" id="title" name="title"
 							placeholder="Tiêu đề câu hỏi (Bắt buộc)">
 					</div>
 					<div class="form-group">
 						<label for="message-text" class="col-form-label">Nội dung câu hỏi<span
 							class="text-danger">&nbsp(Bắt buộc)</span></label>
-						<textarea class="form-control textarea" id="review-content"
+						<textarea class="form-control textarea" id="content"
 							name="content" placeholder="Tối thiểu 10 ký tự"></textarea>
 					</div>
 					<div class="g-recaptcha"
@@ -629,8 +629,8 @@ figure {
 			<div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy
 					Bỏ</button>
-				<button type="button" class="btn btn-primary button-comment-submit"
-					disabled>Trả lời ngay</button>
+				<button type="button" class="btn btn-primary button-question-submit"
+					disabled>Gửi câu hỏi</button>
 			</div>
 		</div>
 	</div>

@@ -16,19 +16,23 @@
     event.preventDefault()
     const form = $$('#' + formId);
     const contentInput = form.content;
+    const titleQuestion = form.title;
     if (contentInput.value.length < 10) {
       contentInput.classList.add('is-invalid')
       form.querySelector('.help').classList.remove('is-hidden')
-    } else {
+    } else if(titleQuestion.value.length < 10) {
+    	titleQuestion.classList.add('is-invalid')
+    	form.querySelector('.help').classList.remove('is-hidden')
+    } else{
       form.submit()
     }
   }
 
-  const btnReviewSubmit = $$('.button-review-submit')
-  btnReviewSubmit.addEventListener('click', validateForm('review-form'))
+  const btnQuestionSubmit = $$('.button-question-submit')
+  btnQuestionSubmit.addEventListener('click', validateForm('review-form'))
 
-  function onReviewCaptchaSuccess() {
-    btnReviewSubmit.removeAttribute('disabled')
+  function onQuestionCaptchaSuccess() {
+	  btnQuestionSubmit.removeAttribute('disabled')
   }
-  window.onReviewCaptchaSuccess = onReviewCaptchaSuccess
+  window.onQuestionCaptchaSuccess = onQuestionCaptchaSuccess
 })()
