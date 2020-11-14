@@ -606,9 +606,14 @@ figure {
 				<form id="comment-form"
 					action="<?php echo $servername ?>/school/dang-reply" method="POST">
 					<div class="form-group">
-						<label for="reviewer" class="col-form-label">Tên Họ</label> <input
-							type="text" class="form-control" id="replyer" name="replyer"
+						<label for="reviewer" class="col-form-label">Tên Người Đăng</label> <input
+							type="text" class="form-control" id="person-name" name="person-name"
 							placeholder="Tên người đặt câu hỏi (Mặc định là KHÁCH)">
+					</div>
+					<div class="form-group">
+						<label for="reviewer" class="col-form-label">Tiêu đề câu hỏi</label> <input
+							type="text" class="form-control" id="question-title" name="question-title"
+							placeholder="Tiêu đề câu hỏi (Bắt buộc)">
 					</div>
 					<div class="form-group">
 						<label for="message-text" class="col-form-label">Nội dung câu hỏi<span
@@ -617,14 +622,8 @@ figure {
 							name="content" placeholder="Tối thiểu 10 ký tự"></textarea>
 					</div>
 					<div class="g-recaptcha"
-						data-sitekey="6LelELIZAAAAALqW3G4h7Zj2gafuc2iagDhT6rf9"
-						data-callback="onCommentCaptchaSuccess"></div>
-					<input type="hidden" name="schoolId"
-						value="<?php echo $row["id"] ?>" /> <input type="hidden"
-						name="schoolUrl"
-						value="<?php echo $servername ?>/school/<?php echo $row["slugschool"] ?>-<?php echo $row["id"] ?>" />
-					<input type="hidden" id="review-id" name="reviewId" /> <input
-						type="hidden" id="member-id" name="member-id" value="0">
+						data-sitekey="6Lfg1eIZAAAAADNXuRySlZvlhOiHnHk1m-hK2yFE"
+						data-callback="onQuestionCaptchaSuccess"></div>
 				</form>
 			</div>
 			<div class="modal-footer">
@@ -636,6 +635,9 @@ figure {
 		</div>
 	</div>
 </div>
+<script src="<?php echo $servername ?>/web/public/js/question.js" async
+	defer></script>
+<script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
 <!-- End Modal -->
 		</div>
 		<div class="col-md-3 col-right">
