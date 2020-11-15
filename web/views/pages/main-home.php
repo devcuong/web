@@ -603,7 +603,7 @@ figure {
 				</button>
 			</div>
 			<div class="modal-body">
-				<form id="comment-form"
+				<form id="question-form"
 					action="<?php echo $servername ?>/questions/dang-question" method="POST">
 					<div class="form-group">
 						<label for="reviewer" class="col-form-label">Tên Người Đăng</label> <input
@@ -611,9 +611,10 @@ figure {
 							placeholder="Tên người đặt câu hỏi (Mặc định là KHÁCH)">
 					</div>
 					<div class="form-group">
-						<label for="reviewer" class="col-form-label">Tiêu đề câu hỏi</label> <input
-							type="text" class="form-control" id="title" name="title"
-							placeholder="Tiêu đề câu hỏi (Bắt buộc)">
+						<label for="reviewer" class="col-form-label">Tiêu đề câu hỏi<span
+							class="text-danger">&nbsp(Bắt buộc)</span></label> <input
+							type="text" class="form-control" id="qtitle" name="qtitle"
+							placeholder="Tiêu đề câu hỏi">
 					</div>
 					<div class="form-group">
 						<label for="message-text" class="col-form-label">Nội dung câu hỏi<span
