@@ -1,5 +1,6 @@
 <?php
 require 'web/class/Purifier.php';
+require 'web/class/CutString.php';
 
 class Questions extends Controller
 {
@@ -29,10 +30,14 @@ class Questions extends Controller
             // Question title
             $qTitle = $purifier->defaultPurifier($_POST["qtitle"]);
             
+            // Title slug
+            $cutString = new CutString();
+            $slugTitle = $cutString->ToSlug($qTitle);
+            
             // Content
             $content = $purifier->defaultPurifier($_POST["content"]);
             
-            $kq = $this->QuestionModel->ThemQuestion($qTitle, $content, $name);
+            $kq = $this->QuestionModel->ThemQuestion($qTitle, $slugTitle, $content, $name);
             $questionUrl = "//localhost/web";
             if ($kq) {
                 ob_start();
