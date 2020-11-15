@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 14, 2020 lúc 01:56 PM
+-- Thời gian đã tạo: Th10 15, 2020 lúc 09:21 AM
 -- Phiên bản máy phục vụ: 10.4.10-MariaDB
 -- Phiên bản PHP: 7.3.12
 
@@ -31,8 +31,17 @@ SET time_zone = "+00:00";
 CREATE TABLE `question` (
   `id` int(11) NOT NULL,
   `tieude` varchar(100) NOT NULL,
-  `noidung` text NOT NULL
+  `slugtieude` varchar(100) NOT NULL,
+  `noidung` text NOT NULL,
+  `nguoihoi` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Đang đổ dữ liệu cho bảng `question`
+--
+
+INSERT INTO `question` (`id`, `tieude`, `slugtieude`, `noidung`, `nguoihoi`) VALUES
+(4, 'Khách', '', 'ggggggggggggggg', 'ggggggggggggggg');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -52,7 +61,7 @@ ALTER TABLE `question`
 -- AUTO_INCREMENT cho bảng `question`
 --
 ALTER TABLE `question`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
