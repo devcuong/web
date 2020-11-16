@@ -194,7 +194,7 @@ figure {
 	min-width: 44px;
 	height: auto;
 	font-size: 11px;
-	padding: 6px;
+	padding: 0px;
 	border: 1px solid transparent;
 	border-radius: 3px;
 	text-align: center;
@@ -202,6 +202,10 @@ figure {
 
 .status.answered {
 	border-color: #5eba7d;
+}
+
+.status.count{
+	border-color: #a35200;
 }
 
 .mini-counts {
@@ -239,11 +243,6 @@ figure {
 	word-break: break-word;
 	font-weight: 400;
 	font-size: 1rem;
-}
-
-.tags {
-	line-height: 18px;
-	float: left;
 }
 
 .started {
@@ -292,12 +291,12 @@ figure {
 }
 
 .question-hyperlink:hover, .question-hyperlink:visited {
-	color: #c02d2e;
+	color: #FE2E2E;
 }
 
 .add-more-btn{
-	border: 1px solid #FE2E2E;
-	background: #FE2E2E;
+	border: 1px solid #0275d8;
+	background: #0275d8;
 	border-radius: 5px;
 	padding: 2px;
 }
@@ -488,11 +487,11 @@ figure {
 								</div>
 								<div>answer</div>
 							</div>
-							<div class="views">
-								<div class="mini-counts warm">
-									<span title="2414 views">2k</span>
+							<div class="status count">
+								<div class="mini-counts">
+									<span title="1 answer">1</span>
 								</div>
-								<div class="warm">views</div>
+								<div>views</div>
 							</div>
 						</div>
 						<div class="summary">
@@ -502,11 +501,6 @@ figure {
 									class="question-hyperlink">Tips and suggestions for private
 									medical office Server Room?</a>
 							</h3>
-							<div class="tags">
-								<a href="/questions/tagged/networking" class="post-tag" title=""
-									rel="tag">networking</a> <a href="/questions/tagged/rack"
-									class="post-tag" title="show questions tagged 'rack'" rel="tag">rack</a>
-							</div>
 							<div class="started">
 								<a
 									href="/questions/1042240/tips-and-suggestions-for-private-medical-office-server-room"
@@ -524,11 +518,11 @@ figure {
 								</div>
 								<div>answer</div>
 							</div>
-							<div class="views">
-								<div class="mini-counts warm">
-									<span title="2414 views">2k</span>
+							<div class="status count">
+								<div class="mini-counts">
+									<span title="1 answer">1</span>
 								</div>
-								<div class="warm">views</div>
+								<div>views</div>
 							</div>
 						</div>
 						<div class="summary">
@@ -538,11 +532,6 @@ figure {
 									class="question-hyperlink">Tips and suggestions for private
 									medical office Server Room?</a>
 							</h3>
-							<div class="tags">
-								<a href="/questions/tagged/networking" class="post-tag" title=""
-									rel="tag">networking</a> <a href="/questions/tagged/rack"
-									class="post-tag" title="show questions tagged 'rack'" rel="tag">rack</a>
-							</div>
 							<div class="started">
 								<a
 									href="/questions/1042240/tips-and-suggestions-for-private-medical-office-server-room"
@@ -560,11 +549,11 @@ figure {
 								</div>
 								<div>answer</div>
 							</div>
-							<div class="views">
-								<div class="mini-counts warm">
-									<span title="2414 views">2k</span>
+							<div class="status count">
+								<div class="mini-counts">
+									<span title="1 answer">1</span>
 								</div>
-								<div class="warm">views</div>
+								<div>views</div>
 							</div>
 						</div>
 						<div class="summary">
@@ -574,11 +563,6 @@ figure {
 									class="question-hyperlink">Tips and suggestions for private
 									medical office Server Room?</a>
 							</h3>
-							<div class="tags">
-								<a href="/questions/tagged/networking" class="post-tag" title=""
-									rel="tag">networking</a> <a href="/questions/tagged/rack"
-									class="post-tag" title="show questions tagged 'rack'" rel="tag">rack</a>
-							</div>
 							<div class="started">
 								<a
 									href="/questions/1042240/tips-and-suggestions-for-private-medical-office-server-room"

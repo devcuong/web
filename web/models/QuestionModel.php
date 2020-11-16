@@ -10,7 +10,14 @@ class QuestionModel extends DB{
         }else{
             mysqli_stmt_bind_param($stmt, "ssss", $tieude, $slugtieude, $noidung, $nguoihoi);
             $result = mysqli_stmt_execute($stmt);
+            $result = $this->con->insert_id;
         }
         return $result;
+    }
+    
+    /*LẤY QUESTION BẰNG ID QUESTION*/
+    public function LayQuestionBangId($questionId){
+        $qr = "SELECT * FROM Questions WHERE id = ".mysqli_real_escape_string($this->con,$questionId);
+        return mysqli_query($this->con, $qr);
     }
 }

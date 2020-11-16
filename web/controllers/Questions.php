@@ -13,6 +13,17 @@ class Questions extends Controller
         $this->QuestionModel = $this->model("QuestionModel");
     }
     
+    function Index($a, $b){
+        if($b != null){
+            $questionId = end(explode("-", $b));
+            $this->QuestionModel->LayQuestionBangId($questionId);
+        }
+         // View
+        /*$this->view("main-template", [
+            "Page" => "questions"
+        ]);*/
+    }
+    
     // Đăng question
     function DangQuestion()
     {
@@ -38,17 +49,20 @@ class Questions extends Controller
             $content = $purifier->defaultPurifier($_POST["content"]);
             
             $kq = $this->QuestionModel->ThemQuestion($qTitle, $slugTitle, $content, $name);
-            $questionUrl = "//localhost/web";
+            
+            $server = new Server();
+            $questionUrl = $server->servername."/"."Questions"."/".$slugTitle."-".$kq;
+
             if ($kq) {
                 ob_start();
                 header("Location: " . $questionUrl, 301);
                 exit();
             }
         } else {
-            $server = new Server();
+            /*$server = new Server();
             ob_start();
             header("Location: " . $server->servername, 301);
-            exit();
+            exit();*/
         }
     }
 }
